@@ -103,5 +103,19 @@ pip_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
 
+# Path to oh-my-zsh custom directory.
+zsh_custom: "~/.oh-my-zsh/custom"
+
+# List of oh-my-zsh plugins.
+zsh_plugins:
+  - repo: https://github.com/romkatv/powerlevel10k.git
+    dest: "{{ zsh_custom }}/themes/powerlevel10k"
+  - repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: "{{ zsh_custom }}/plugins/zsh-autosuggestions"
+  - repo: https://github.com/zsh-users/zsh-completions
+    dest: "{{ zsh_custom }}/plugins/zsh-completions"
+  - repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: "{{ zsh_custom }}/plugins/zsh-syntax-highlighting"
+
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

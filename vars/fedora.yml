@@ -1,3 +1,4 @@
+---
 dnf_installed_packages:
   # CLI Applications
   # - ansible # Installed via Pip.
@@ -21,23 +22,15 @@ dnf_installed_packages:
   - google-chrome-stable
 
 yum_repositories:
-  - {
-      name: "1password",
-      description: "1Password Stable Channel",
-      url: "https://downloads.1password.com/linux/rpm/stable/x86_64",
-    }
-  - {
-      name: "code",
-      description: "Visual Studio Code",
-      url: "https://packages.microsoft.com/yumrepos/vscode",
-    }
-  - {
-      name: "google-chrome",
-      description: "google-chrome",
-      url: "https://dl.google.com/linux/chrome/rpm/stable/x86_64",
-    }
-  - {
-      name: "tailscale-stable",
-      description: "Tailscale stable",
-      url: "https://pkgs.tailscale.com/stable/fedora/x86_64",
-    }
+  - name: "1password"
+    description: "1Password Stable Channel"
+    url: "https://downloads.1password.com/linux/rpm/stable/x86_64"
+  - name: "vscode"
+    description: "Visual Studio Code"
+    url: "https://packages.microsoft.com/yumrepos/vscode"
+  - name: "google-chrome"
+    description: "google-chrome"
+    url: "https://dl.google.com/linux/chrome/rpm/stable/x86_64"
+  - name: "tailscale"
+    description: "Tailscale stable"
+    url: "https://pkgs.tailscale.com/stable/fedora/x86_64"
