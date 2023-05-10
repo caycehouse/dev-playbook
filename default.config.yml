@@ -4,16 +4,30 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+configure_dock: true
+dockitems_remove:
+  - Contacts
+  - Calendar
+  - Notes
+  - Reminders
+  - Maps
+  - Photos
+  - Pages
+  - Numbers
+  - Keynote
+  - Books
+dockitems_persist:
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    pos: 2
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+  - name: "TablePlus"
+    path: "/Applications/TablePlus.app"
+  - name: "Keka"
+    path: "/Applications/Keka.app"
 
 configure_sudoers: false
 sudoers_custom_config: ""
@@ -37,53 +51,130 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
+  - bat
+  - blueutil
+  - diff-so-fancy
+  - dos2unix
+  - exa
+  - gh
   - git
-  - github/gh/gh
-  - go
-  - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
+  - htop
+  - ipcalc
+  - iperf3
+  - jq
+  - python@3.10
+  - neofetch
   - nmap
   - node
-  - nvm
-  - php
+  - zstd
+  - openjdk
+  - prettier
+  - prettyping
+  - python@3.9
+  - rclone
+  - restic
+  - shellcheck
   - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
+  - swiftlint
+  - tealdeer
+  - telnet
+  - tmux
+  - topgrade
   - wget
-  - wrk
-  - zsh-history-substring-search
+  - yamllint
+  - yarn
+  - yq
 
 homebrew_taps:
-  - homebrew/core
+  - {
+      name: "caycehouse/personal",
+      url: "https://github.com/caycehouse/homebrew-personal.git",
+    }
   - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/cask-versions
+  - homebrew/core
+  - homebrew/services
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
+  - 1password
+  - 1password-cli
+  - adobe-acrobat-reader
+  - airpods-sound-quality-fixer
+  - altserver
+  - appcleaner
+  - balenaetcher
+  - curseforge
+  - cyberduck
+  - dash
+  - devtoys
+  - discord
   - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - sequel-ace
+  - epic-games
+  - feed-the-beast
+  - font-fira-code
+  - github
+  - gog-galaxy
+  - graphql-playground
+  - iterm2
+  - keka
+  - kekaexternalhelper
+  - kindle
+  - microsoft-auto-update
+  - microsoft-teams
+  - moonlight
+  - obsidian
+  - onyx
+  - openrct2
+  - openscad
+  - origin
+  - parsec
+  - postman
+  - prismlauncher
+  - profilecreator
+  - rectangle
+  - runelite
+  - sidequest
+  - silentknight
   - slack
-  - sublime-text
-  - transmit
+  - steam
+  - superslicer
+  - suspicious-package
+  - tableplus
+  - ultimaker-cura
+  - visual-studio-code
+  - vlc
+  - vmware-fusion
+  - webex
+  - zoom
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - { id: 1569813296, name: "1Password for Safari" }
+  - { id: 1037126344, name: "Apple Configurator" }
+  - { id: 1019371109, name: "Balance Lock" }
+  - { id: 1287239339, name: "ColorSlurp" }
+  - { id: 640199958, name: "Developer" }
+  - { id: 1381004916, name: "Discovery" }
+  - { id: 1444383602, name: "GoodNotes" }
+  - { id: 1474276998, name: "HP Smart" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 462058435, name: "Microsoft Excel" }
+  - { id: 784801555, name: "Microsoft OneNote" }
+  - { id: 985367838, name: "Microsoft Outlook" }
+  - { id: 462062816, name: "Microsoft PowerPoint" }
+  - { id: 1295203466, name: "Microsoft Remote Desktop" }
+  - { id: 462054704, name: "Microsoft Word" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 823766827, name: "OneDrive" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409907375, name: "Remote Desktop" }
+  - { id: 1246969117, name: "Steam Link" }
+  - { id: 1475387142, name: "Tailscale" }
+  - { id: 1176074088, name: "Termius" }
+  - { id: 1320666476, name: "Wipr" }
+  - { id: 497799835, name: "Xcode" }
 mas_email: ""
 mas_password: ""
 
