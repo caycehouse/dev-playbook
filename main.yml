@@ -4,6 +4,7 @@
 
   vars_files:
     - default.config.yml
+    - vars/fedora.yml
 
   pre_tasks:
     - name: Include playbook configuration.
@@ -32,6 +33,10 @@
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ['sudoers']
+
+    - import_tasks: tasks/fedora.yml
+      when: ansible_distribution == 'Fedora'
+      tags: ['fedora']
 
     - import_tasks: tasks/zsh.yml
       tags: ['zsh']
