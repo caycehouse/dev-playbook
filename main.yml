@@ -33,10 +33,6 @@
       when: configure_sudoers
       tags: ['sudoers']
 
-    - import_tasks: tasks/osx.yml
-      when: configure_osx and ansible_distribution == 'MacOSX'
-      tags: ['osx']
-
     - import_tasks: tasks/zsh.yml
       tags: ['zsh']
 
