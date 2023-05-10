@@ -1,0 +1,10 @@
+---
+- name: Perform dnf installation.
+  block:
+    # Repository.
+    - name: Ensure configured repositories are enabled.
+      ansible.builtin.yum_repository:
+        name: "{{ item.name }}"
+        description: "{{ item.description }}"
+        baseurl: "{{ item.url }}"
+      loop: "{{ yum_repositories }}"

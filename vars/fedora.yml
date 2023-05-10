@@ -1,0 +1,47 @@
+dnf_installed_packages:
+  # CLI Applications
+  # - ansible # Installed via Pip.
+  - bat
+  - exa
+  - fedora-workstation-repositories
+  - fira-code-fonts
+  - gh
+  - htop
+  - neofetch
+  - prettyping
+  - shellcheck
+  - tailscale
+  - tealdeer
+  - vim
+  - zsh
+
+  # GUI Applications
+  - 1password
+  - gnome-tweaks
+  - google-chrome-stable
+
+yum_repositories:
+  - repo:
+      {
+        name: "1password",
+        description: "1Password Stable Channel",
+        url: "https://downloads.1password.com/linux/rpm/stable/x86_64",
+      }
+  - repo:
+      {
+        name: "code",
+        description: "Visual Studio Code",
+        url: "https://packages.microsoft.com/yumrepos/vscode",
+      }
+  - repo:
+      {
+        name: "google-chrome",
+        description: "google-chrome",
+        url: "https://dl.google.com/linux/chrome/rpm/stable/x86_64",
+      }
+  - repo:
+      {
+        name: "tailscale-stable",
+        description: "Tailscale stable",
+        url: "https://pkgs.tailscale.com/stable/fedora/x86_64",
+      }
