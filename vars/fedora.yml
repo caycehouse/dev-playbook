@@ -20,8 +20,9 @@ dnf_installed_packages:
   # GUI Applications
   - 1password
   - code
-  - google-chrome-stable
   - gnome-tweaks
+  - google-chrome-stable
+  - https://binaries.webex.com/WebexDesktop-CentOS-Official-Package/Webex.rpm
 
 flatpak_installed_packages:
   - com.discordapp.Discord # Discord
