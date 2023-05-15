@@ -8,6 +8,7 @@ dnf_installed_packages:
   - fira-code-fonts
   - gh
   - htop
+  - info
   - neofetch
   - prettyping
   - shellcheck
@@ -18,19 +19,38 @@ dnf_installed_packages:
 
   # GUI Applications
   - 1password
-  - gnome-tweaks
+  - code
   - google-chrome-stable
+  - gnome-tweaks
+
+flatpak_installed_packages:
+  - com.discordapp.Discord # Discord
+  - com.github.IsmaelMartinez.teams_for_linux # Teams for Linux
+  - com.github.tchx84.Flatseal # Flatseal
+  - com.mattjakeman.ExtensionManager # Extension Manager
+  - com.parsecgaming.parsec # Parsec
+  - com.valvesoftware.Steam # Steam
+  - io.github.shiftey.Desktop # Github Desktop
+  - us.zoom.zoom # Zoom
 
 yum_repositories:
   - name: "1password"
     description: "1Password Stable Channel"
     url: "https://downloads.1password.com/linux/rpm/stable/x86_64"
-  - name: "vscode"
-    description: "Visual Studio Code"
-    url: "https://packages.microsoft.com/yumrepos/vscode"
   - name: "google-chrome"
     description: "google-chrome"
     url: "https://dl.google.com/linux/chrome/rpm/stable/x86_64"
-  - name: "tailscale"
+    gpgcheck: true
+    gpgkey: "https://dl.google.com/linux/linux_signing_key.pub"
+  - name: "tailscale-stable"
     description: "Tailscale stable"
     url: "https://pkgs.tailscale.com/stable/fedora/x86_64"
+    file: tailscale
+    repo_gpgcheck: true
+    gpgkey: "https://pkgs.tailscale.com/stable/fedora/repo.gpg"
+  - name: "code"
+    description: "Visual Studio Code"
+    url: "https://packages.microsoft.com/yumrepos/vscode"
+    file: vscode
+    gpgcheck: true
+    gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
