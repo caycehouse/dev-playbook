@@ -7,6 +7,10 @@
         name: "{{ item.name }}"
         description: "{{ item.description }}"
         baseurl: "{{ item.url }}"
+        file: "{{ item.file | default(item.name) }}"
+        gpgcheck: "{{ item.gpgcheck | default(false) }}"
+        repo_gpgcheck: "{{ item.repo_gpgcheck | default(false) }}"
+        gpgkey: "{{ item.gpgkey | default() }}"
       loop: "{{ yum_repositories }}"
 
     # dnf.
