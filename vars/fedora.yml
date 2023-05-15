@@ -35,13 +35,20 @@ flatpak_installed_packages:
   - us.zoom.zoom # Zoom
 
 gnome_extensions:
-  - 2236 # Night Theme Switcher
-  - 307 # Dash to Dock
-  - 517 # Caffeine
-  - 5489 # Search Light
-  - 5575 # Power Profile Switcher
-  - 7 # Removable Drive Menu
-  - 779 # Clipboard Indicator
+  - id: 2236 # Night Theme Switcher
+    enable: true
+  - id: 307 # Dash to Dock
+    enable: true
+  - id: 517 # Caffeine
+    enable: true
+  - id: 5489 # Search Light
+    enable: true
+  - id: 5575 # Power Profile Switcher
+    enable: true
+  - id: 7 # Removable Drive Menu
+    enable: true
+  - id: 779 # Clipboard Indicator
+    enable: true
 
 yum_repositories:
   - name: "1password"

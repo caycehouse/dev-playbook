@@ -2,6 +2,7 @@
 roles:
   - name: elliotweiser.osx-command-line-tools
   - name: geerlingguy.dotfiles
+  - name: petermosmans.customize-gnome
 
 collections:
   - name: geerlingguy.mac
