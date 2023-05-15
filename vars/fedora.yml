@@ -26,7 +26,6 @@ dnf_installed_packages:
 
 flatpak_installed_packages:
   - com.discordapp.Discord # Discord
-  - com.github.IsmaelMartinez.teams_for_linux # Teams for Linux
   - com.github.tchx84.Flatseal # Flatseal
   - com.mattjakeman.ExtensionManager # Extension Manager
   - com.parsecgaming.parsec # Parsec
