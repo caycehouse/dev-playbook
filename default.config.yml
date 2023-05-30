@@ -42,11 +42,11 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
   - .ssh/config
-  - .bashrc
   - .gitconfig
   - .gitignore
   - .p10k.zsh
   - .vimrc
+  - .zprofile
   - .zshrc
 
 homebrew_installed_packages:
