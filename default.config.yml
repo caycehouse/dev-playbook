@@ -87,9 +87,9 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - {
-      name: "caycehouse/personal",
-      url: "https://github.com/caycehouse/homebrew-personal.git",
-    }
+    name: "caycehouse/personal",
+    url: "https://github.com/caycehouse/homebrew-personal.git",
+  }
   - homebrew/cask
   - homebrew/cask-fonts
   - homebrew/cask-versions
@@ -151,30 +151,30 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
-  - { id: 1569813296, name: "1Password for Safari" }
-  - { id: 1037126344, name: "Apple Configurator" }
-  - { id: 1019371109, name: "Balance Lock" }
-  - { id: 1287239339, name: "ColorSlurp" }
-  - { id: 640199958, name: "Developer" }
-  - { id: 1381004916, name: "Discovery" }
-  - { id: 1444383602, name: "GoodNotes" }
-  - { id: 1474276998, name: "HP Smart" }
-  - { id: 409183694, name: "Keynote" }
-  - { id: 462058435, name: "Microsoft Excel" }
-  - { id: 784801555, name: "Microsoft OneNote" }
-  - { id: 985367838, name: "Microsoft Outlook" }
-  - { id: 462062816, name: "Microsoft PowerPoint" }
-  - { id: 1295203466, name: "Microsoft Remote Desktop" }
-  - { id: 462054704, name: "Microsoft Word" }
-  - { id: 409203825, name: "Numbers" }
-  - { id: 823766827, name: "OneDrive" }
-  - { id: 409201541, name: "Pages" }
-  - { id: 409907375, name: "Remote Desktop" }
-  - { id: 1246969117, name: "Steam Link" }
-  - { id: 1475387142, name: "Tailscale" }
-  - { id: 1176074088, name: "Termius" }
-  - { id: 1320666476, name: "Wipr" }
-  - { id: 497799835, name: "Xcode" }
+  - {id: 1569813296, name: "1Password for Safari"}
+  - {id: 1037126344, name: "Apple Configurator"}
+  - {id: 1019371109, name: "Balance Lock"}
+  - {id: 1287239339, name: "ColorSlurp"}
+  - {id: 640199958, name: "Developer"}
+  - {id: 1381004916, name: "Discovery"}
+  - {id: 1444383602, name: "GoodNotes"}
+  - {id: 1474276998, name: "HP Smart"}
+  - {id: 409183694, name: "Keynote"}
+  - {id: 462058435, name: "Microsoft Excel"}
+  - {id: 784801555, name: "Microsoft OneNote"}
+  - {id: 985367838, name: "Microsoft Outlook"}
+  - {id: 462062816, name: "Microsoft PowerPoint"}
+  - {id: 1295203466, name: "Microsoft Remote Desktop"}
+  - {id: 462054704, name: "Microsoft Word"}
+  - {id: 409203825, name: "Numbers"}
+  - {id: 823766827, name: "OneDrive"}
+  - {id: 409201541, name: "Pages"}
+  - {id: 409907375, name: "Remote Desktop"}
+  - {id: 1246969117, name: "Steam Link"}
+  - {id: 1475387142, name: "Tailscale"}
+  - {id: 1176074088, name: "Termius"}
+  - {id: 1320666476, name: "Wipr"}
+  - {id: 497799835, name: "Xcode"}
 mas_email: ""
 mas_password: ""
 

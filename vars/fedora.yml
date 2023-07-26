@@ -26,28 +26,28 @@ dnf_installed_packages:
   - steam
 
 flatpak_installed_packages:
-  - com.discordapp.Discord # Discord
-  - com.github.tchx84.Flatseal # Flatseal
-  - com.mattjakeman.ExtensionManager # Extension Manager
-  - com.parsecgaming.parsec # Parsec
-  - io.github.shiftey.Desktop # Github Desktop
-  - org.gnome.Extensions # Gnome Extensions
-  - us.zoom.zoom # Zoom
+  - com.discordapp.Discord  # Discord
+  - com.github.tchx84.Flatseal  # Flatseal
+  - com.mattjakeman.ExtensionManager  # Extension Manager
+  - com.parsecgaming.parsec  # Parsec
+  - io.github.shiftey.Desktop  # Github Desktop
+  - org.gnome.Extensions  # Gnome Extensions
+  - us.zoom.zoom  # Zoom
 
 gnome_extensions:
-  - id: 2236 # Night Theme Switcher
+  - id: 2236  # Night Theme Switcher
     enable: true
-  - id: 307 # Dash to Dock
+  - id: 307  # Dash to Dock
     enable: true
-  - id: 517 # Caffeine
+  - id: 517  # Caffeine
     enable: true
-  - id: 5489 # Search Light
+  - id: 5489  # Search Light
     enable: true
-  - id: 5575 # Power Profile Switcher
+  - id: 5575  # Power Profile Switcher
     enable: true
-  - id: 7 # Removable Drive Menu
+  - id: 7  # Removable Drive Menu
     enable: true
-  - id: 779 # Clipboard Indicator
+  - id: 779  # Clipboard Indicator
     enable: true
 
 yum_repositories:
