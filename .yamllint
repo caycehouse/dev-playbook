@@ -7,4 +7,5 @@ rules:
     level: warning
 
 ignore: |
+  .github/workflows/ci.yml
   roles/
