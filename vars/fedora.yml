@@ -14,6 +14,7 @@ dnf_installed_packages:
   - shellcheck
   - tailscale
   - tealdeer
+  - telnet
   - vim
   - zsh
 
@@ -24,6 +25,12 @@ dnf_installed_packages:
   - google-chrome-stable
   - https://binaries.webex.com/WebexDesktop-CentOS-Official-Package/Webex.rpm
   - steam
+  - virtualbox
+
+
+  # Graphics drivers
+  - akmod-nvidia
+  - xorg-x11-drv-nvidia-cuda
 
 flatpak_installed_packages:
   - com.discordapp.Discord  # Discord
@@ -49,6 +56,8 @@ gnome_extensions:
     enable: true
   - id: 779  # Clipboard Indicator
     enable: true
+  - id: 28  # gTile
+    enable: true
 
 yum_repositories:
   - name: "1password"
@@ -65,6 +74,12 @@ yum_repositories:
     file: tailscale
     repo_gpgcheck: true
     gpgkey: "https://pkgs.tailscale.com/stable/fedora/repo.gpg"
+  - name: "virtualbox"
+    description: "Fedora $releasever - $basearch - VirtualBox"
+    url: "http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch"
+    gpgcheck: true
+    repo_gpgcheck: true
+    gpgkey: "https://www.virtualbox.org/download/oracle_vbox_2016.asc"
   - name: "code"
     description: "Visual Studio Code"
     url: "https://packages.microsoft.com/yumrepos/vscode"
