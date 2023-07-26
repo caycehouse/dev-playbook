@@ -1,9 +1,3 @@
 ---
-skip_list:
-  - schema[meta]
-  - role-name
-  - experimental
-  - fqcn
-  - name[missing]
-  - no-changed-when
-  - risky-file-permissions
+exclude_paths:
+  - roles/

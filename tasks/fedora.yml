@@ -1,5 +1,6 @@
 ---
 - name: Perform dnf installation.
+  become: true
   block:
     # Repository.
     - name: Ensure configured repositories are enabled.
@@ -24,6 +25,5 @@
     - name: Ensure configured flatpaks are installed.
       community.general.flatpak:
         name: "{{ item.name | default(item) }}"
-        state: "{{ item.state | default('present')}}"
+        state: "{{ item.state | default('present') }}"
       loop: "{{ flatpak_installed_packages }}"
-  become: true

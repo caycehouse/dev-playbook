@@ -7,8 +7,10 @@
 - name: Cloning oh-my-zsh
   ansible.builtin.shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
   when: not stat_oh_my_zsh_result.stat.exists
+  register: output
+  changed_when: output.rc != 0
 
-- name: Clone theme
+- name: Clone plugins  # noqa: latest
   ansible.builtin.git:
     repo: "{{ item.repo }}"
     dest: "{{ item.dest }}"

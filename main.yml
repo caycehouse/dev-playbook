@@ -8,7 +8,7 @@
 
   pre_tasks:
     - name: Include playbook configuration.
-      include_vars: "{{ item }}"
+      ansible.builtin.include_vars: "{{ item }}"
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
@@ -33,25 +33,29 @@
       tags: ['gnome']
 
   tasks:
-    - import_tasks: tasks/sudoers.yml
+    - name: "Configuring sudoers"
+      ansible.builtin.import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ['sudoers']
 
-    - import_tasks: tasks/fedora.yml
+    - name: "Applying Fedora specific configuration"
+      ansible.builtin.import_tasks: tasks/fedora.yml
       when: ansible_distribution == 'Fedora'
       tags: ['fedora']
 
-    - import_tasks: tasks/zsh.yml
+    - name: "Applying zsh configuration"
+      ansible.builtin.import_tasks: tasks/zsh.yml
       tags: ['zsh']
 
-    - import_tasks: tasks/extra-packages.yml
+    - name: "Installing extra packages"
+      ansible.builtin.import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
     - name: Run post-provision task files in a block.
       tags: ['post']
       block:
         - name: Run configured post-provision ansible task files.
-          include_tasks: "{{ outer_item }}"
+          ansible.builtin.include_tasks: "{{ outer_item }}"
           loop_control:
             loop_var: outer_item
           with_fileglob: "{{ post_provision_tasks | default(omit) }}"
