@@ -25,38 +25,37 @@ dnf_installed_packages:
   - google-chrome-stable
   - https://binaries.webex.com/WebexDesktop-CentOS-Official-Package/Webex.rpm
   - steam
-  - VirtualBox-7.0
-
+  - VirtualBox
 
   # Graphics drivers
   - akmod-nvidia
   - xorg-x11-drv-nvidia-cuda
 
 flatpak_installed_packages:
-  - com.discordapp.Discord  # Discord
-  - com.github.tchx84.Flatseal  # Flatseal
-  - com.mattjakeman.ExtensionManager  # Extension Manager
-  - com.parsecgaming.parsec  # Parsec
-  - io.github.shiftey.Desktop  # Github Desktop
-  - org.gnome.Extensions  # Gnome Extensions
-  - us.zoom.Zoom  # Zoom
+  - com.discordapp.Discord # Discord
+  - com.github.tchx84.Flatseal # Flatseal
+  - com.mattjakeman.ExtensionManager # Extension Manager
+  - com.parsecgaming.parsec # Parsec
+  - io.github.shiftey.Desktop # Github Desktop
+  - org.gnome.Extensions # Gnome Extensions
+  - us.zoom.Zoom # Zoom
 
 gnome_extensions:
-  - id: 2236  # Night Theme Switcher
+  - id: 2236 # Night Theme Switcher
     enable: true
-  - id: 307  # Dash to Dock
+  - id: 307 # Dash to Dock
     enable: true
-  - id: 517  # Caffeine
+  - id: 517 # Caffeine
     enable: true
-  - id: 5489  # Search Light
+  - id: 5489 # Search Light
     enable: true
-  - id: 5575  # Power Profile Switcher
+  - id: 5575 # Power Profile Switcher
     enable: true
-  - id: 7  # Removable Drive Menu
+  - id: 7 # Removable Drive Menu
     enable: true
-  - id: 779  # Clipboard Indicator
+  - id: 779 # Clipboard Indicator
     enable: true
-  - id: 28  # gTile
+  - id: 28 # gTile
     enable: true
 
 yum_repositories:
@@ -74,12 +73,6 @@ yum_repositories:
     file: tailscale
     repo_gpgcheck: true
     gpgkey: "https://pkgs.tailscale.com/stable/fedora/repo.gpg"
-  - name: "virtualbox"
-    description: "Fedora $releasever - $basearch - VirtualBox"
-    url: "http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch"
-    gpgcheck: true
-    repo_gpgcheck: true
-    gpgkey: "https://www.virtualbox.org/download/oracle_vbox_2016.asc"
   - name: "code"
     description: "Visual Studio Code"
     url: "https://packages.microsoft.com/yumrepos/vscode"
