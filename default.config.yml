@@ -55,7 +55,7 @@ homebrew_installed_packages:
   - blueutil
   - diff-so-fancy
   - dos2unix
-  - exa
+  - eza
   - gh
   - git
   - htop

@@ -3,7 +3,7 @@ dnf_installed_packages:
   # CLI Applications
   # - ansible # Installed via Pip.
   - bat
-  - exa
+  - eza
   - fedora-workstation-repositories
   - fira-code-fonts
   - gh
