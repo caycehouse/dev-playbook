@@ -22,7 +22,6 @@ dnf_installed_packages:
   - 1password
   - code
   - gnome-tweaks
-  - google-chrome-stable
   - https://binaries.webex.com/WebexDesktop-CentOS-Official-Package/Webex.rpm
   - steam
   - VirtualBox
@@ -34,6 +33,7 @@ dnf_installed_packages:
 flatpak_installed_packages:
   - com.discordapp.Discord # Discord
   - com.github.tchx84.Flatseal # Flatseal
+  - com.google.Chrome # Chrome
   - com.mattjakeman.ExtensionManager # Extension Manager
   - com.parsecgaming.parsec # Parsec
   - io.github.shiftey.Desktop # Github Desktop
