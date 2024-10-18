@@ -87,8 +87,6 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - {name: "caycehouse/personal", url: "https://github.com/caycehouse/homebrew-personal.git"}
-  - homebrew/cask
-  - homebrew/core
   - homebrew/services
 
 homebrew_cask_appdir: /Applications
